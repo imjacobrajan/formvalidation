@@ -29,7 +29,7 @@ body {
 }
 
 .form_container {
-  padding: 10px;
+  /* padding: 10px; */
   width: 90%;
   margin: 10px;
 }
@@ -68,6 +68,17 @@ p {
   color: white;
   font: 16px;
   margin-bottom: 5px;
+  width: auto;
+  position: relative;
+}
+
+p::after {
+  content: "*";
+  font-size: 12px;
+  color: rgb(255, 116, 116);
+  margin-left: 3px;
+  position: relative;
+  top: -5px;
 }
 
 span {
@@ -112,6 +123,29 @@ button {
 a {
   text-decoration: none;
   color: #04ed8d;
+}
+
+.error {
+  font-size: 12px;
+  color: rgb(255, 116, 116);
+  visibility: hidden;
+}
+
+i {
+  height: 2px;
+  width: 2px;
+  font-size: 16px;
+  /* margin-left: 10px; */
+  color: #1a8d5f;
+  position: relative;
+  left: 10px;
+  visibility: hidden;
+}
+
+#email,
+#password,
+#name {
+  width: 95%;
 }
 
 @media (max-width: 576px) {

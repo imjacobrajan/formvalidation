@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form Validation</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -19,13 +23,17 @@
       <form>
         <div class="name form_container">
           <p>NAME</p>
-          <input type="text" placeholder="Enter your Name" id="name" />
-          <span id="name_err"></span>
+          <input type="text" placeholder="Enter your Name" id="name" /><span
+          ><i class="fa-solid fa-circle-check " id="name_ok" ></i
+        >
+          <span id="name_err" class="error">Please Enter a valid name</span>
         </div>
         <div class="email form_container">
           <p>EMAIL</p>
-          <input type="text" placeholder="Enter your Email" id="email" />
-          <span id="email_err"></span>
+          <input type="text" placeholder="Enter your Email" id="email" /><span
+            ><i class="fa-solid fa-circle-check " id="email_ok"></i
+          ></span>
+          <span id="email_err" class="error">Please Enter a valid Email</span>
         </div>
         <div class="password form_container">
           <p>PASSWORD</p>
@@ -33,8 +41,12 @@
             type="password"
             placeholder="Enter your Password"
             id="password"
-          />
-          <span id="password_err"></span>
+          /><span
+          ><i class="fa-solid fa-circle-check "id="password_ok"></i
+        >
+          <span id="password_err" class="error"
+            >Please Enter a valid Password</span
+          >
         </div>
 
         <div class="btn">
