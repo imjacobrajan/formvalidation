@@ -9,6 +9,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <section class="container">
@@ -26,7 +27,8 @@
           <input type="text" placeholder="Enter your Name" id="name" /><span
           ><i class="fa-solid fa-circle-check " id="name_ok" ></i
         >
-          <span id="name_err" class="error">Please Enter a valid name</span>
+          <span id="name_err" class="error" data-aos="fade-up"
+          data-aos-anchor-placement="bottom-center">Please Enter a valid name</span>
         </div>
         <div class="email form_container">
           <p>EMAIL</p>
@@ -54,6 +56,10 @@
         </div>
       </form>
     </section>
-    <script src="js/script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+      </script>
+      <script src="js/script.js"></script>
   </body>
 </html>
