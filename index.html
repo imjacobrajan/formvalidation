@@ -30,6 +30,14 @@
           <span id="name_err" class="error" data-aos="fade-up"
           data-aos-anchor-placement="bottom-center">Please Enter a valid name</span>
         </div>
+        <div class="name form_container">
+          <p>MOBILE NO</p>
+          <input type="number" placeholder="Enter your Mobile Number" id="mobile" /><span
+          ><i class="fa-solid fa-circle-check " id="mobile_ok" ></i
+        >
+          <span id="mobile_err" class="error" data-aos="fade-up"
+          data-aos-anchor-placement="bottom-center">Please Enter a valid Mobile Number</span>
+        </div>
         <div class="email form_container">
           <p>EMAIL</p>
           <input type="text" placeholder="Enter your Email" id="email" /><span
@@ -43,10 +51,28 @@
             type="password"
             placeholder="Enter your Password"
             id="password"
+            onkeyup="passwordStrength()"
           /><span
           ><i class="fa-solid fa-circle-check "id="password_ok"></i
         >
           <span id="password_err" class="error"
+            >Please Enter a valid Password</span
+          >
+          <span id="password_valid" class="error_valid"
+          >Please Enter a valid Password</span
+        >
+        </div>
+        <div class="password form_container">
+          <p>CONFIRM PASSWORD</p>
+          <input
+            type="password"
+            placeholder="Confirm your Password"
+            id="confirm_password"
+            onkeyup="checkPasswords()"
+          /><span
+          ><i class="fa-solid fa-circle-check "id="confirm_ok"></i
+        >
+          <span id="confirm_err" class="error"
             >Please Enter a valid Password</span
           >
         </div>

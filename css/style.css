@@ -31,7 +31,7 @@ body {
 .form_container {
   /* padding: 10px; */
   width: 90%;
-  margin: 10px;
+  margin: 1px;
 }
 
 .container input {
@@ -67,7 +67,7 @@ form {
 p {
   color: white;
   font: 16px;
-  margin-bottom: 5px;
+  /* margin-bottom: 5px; */
   width: auto;
   position: relative;
 }
@@ -105,7 +105,7 @@ button {
   text-align: center;
   margin-top: 20px;
   background: white;
-  color: #04ed8d;
+  color: #11272e;
   border: none;
   padding: 10px;
   width: 100px;
@@ -131,6 +131,20 @@ a {
   visibility: hidden;
 }
 
+.error_valid {
+  font-size: 12px;
+  color: rgb(255, 116, 116);
+  display: none;
+  position: relative;
+  top: -22px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 i {
   height: 2px;
   width: 2px;
@@ -144,12 +158,14 @@ i {
 
 #email,
 #password,
-#name {
+#name,
+#confirm_password,
+#mobile {
   width: 95%;
 }
 
 @media (max-width: 576px) {
   .container {
-    width: 80%;
+    width: 90%;
   }
 }
